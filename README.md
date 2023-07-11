@@ -10,4 +10,4 @@
 ## Introduction
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam vel massa pulvinar varius. Fusce accumsan odio id ante efficitur cursus. Vestibulum faucibus, est a iaculis pellentesque, justo erat euismod tellus, non convallis ipsum lectus in leo. Aliquam eu dolor nibh. Suspendisse et ullamcorper ex.
 
-[Next: Data Structures](#data-structures)
+[Next >>](./chapters/introduction.md)
