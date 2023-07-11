@@ -1,4 +1,4 @@
-# Computer Science Revision
+# Computer Science
 
 ## Contents
 
