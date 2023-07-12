@@ -89,4 +89,87 @@ function getMiddleOfArray(array) {
 </pre>
 </code>
 
+## Summary
+
+We can summise Big O time complexities for a clearer picture, this can be easier to remember than simply trying to memorise each complexity without context.
+
+### Constant Time Complexity - O(1)
+
+Expression: `f(n) = 1`
+
+<code>
+<pre>
+def print_first_element(arr):
+    print(arr[0])
+</pre>
+</code>
+
+### Logarithmic Time Complexity - O(log n)
+
+Expression: `f(n) = log₂(n)`
+
+<code>
+<pre>
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+</pre>
+</code>
+
+### Linear Time Complexity - O(n)
+
+Expression: `f(n) = n`
+
+<code>
+<pre>
+def find_max(arr):
+    max_val = float('-inf')
+    for num in arr:
+        if num > max_val:
+            max_val = num
+    return max_val
+</pre>
+</code>
+
+### Linearithmic Time Complexity - O(n log n)
+
+Expression: `f(n) = n log₂(n)`
+
+<code>
+<pre>
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    return merge(left, right)
+</pre>
+</code>
+
+### Quadratic Time Complexity - O(n²)
+
+Expression: `f(n) = n²`
+
+<code>
+<pre>
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+</pre>
+</code>
+
 [Next >>]()
