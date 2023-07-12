@@ -95,6 +95,15 @@ We can summise Big O time complexities for a clearer picture, this can be easier
 
 ### Constant Time Complexity - O(1)
 
+Description: Constant time complexity means that the execution
+time does not depend on the input size. It always takes the same
+amount of time to complete, regardless of input.
+
+Identifying: Look for operations or statements which
+are executed a fixed number of times, regardless of input size.
+This would commonly include accessing specific array elements,
+performing basic arithmetic operations, or returning a single value.
+
 Expression: `f(n) = 1`
 
 <code>
@@ -105,6 +114,26 @@ def print_first_element(arr):
 </code>
 
 ### Logarithmic Time Complexity - O(log n)
+
+Description: Logarithmic Time Complexity means that the
+execution time increases `logarithmically` with the input size.
+As the input grows the time taken to complete increases at a slower
+rate. This is because the growth rate is determined by the base of the
+logarithm, the time will grow by a certain factor each time the input
+size is multiplied. for ane example think about a binary search, in this
+algorithm we repeatedly divide the search space in half, eliminating
+one half based on a comparison with the target element. This process
+continues until the target element is found or the search space is
+reduced to zero. Each division of the search space reduces the number
+of remaining elements by half, thus in each step the algorithm eliminates
+half of the elements on each iteration, this means each time the function
+runs the time complexity is less than the first run by approximately half.
+As each step eliminates a significant portion of the remaining input logarithmic
+complexity algorithms are efficient for large inputs.
+
+Identifying: Look for algorithms which divide the input or reduce the
+search space in a logarithmic manner. Common examples include
+divide-and-conquer algorithms such as binary search.
 
 Expression: `f(n) = log₂(n)`
 
@@ -127,6 +156,15 @@ def binary_search(arr, target):
 
 ### Linear Time Complexity - O(n)
 
+Description: Linear Time Complexity means the execution time
+increases linearly with the input size. As the input grows the time
+to complete increases proportionally.
+
+Identifying: Look for loops that iterate through the input once.
+The number of iterations is directly related tot he input size,
+examples of this would be array traversal, linear search algorithms,
+or evens simplistic iterations.
+
 Expression: `f(n) = n`
 
 <code>
@@ -141,6 +179,16 @@ def find_max(arr):
 </code>
 
 ### Linearithmic Time Complexity - O(n log n)
+
+Description: Linearithmic time complexity means that the algorithms
+execution time increases linearly but at a slower rate than linear time
+complexity, effectively combining the linear and logarithmic factors.
+
+Identifying: Look for algorithms which divide the input and
+recursively operate on the resulting subsets. Typically, these
+algorithms involve merging or dividing the input in a way that
+follows divide-and-conquer approach. This can be seen in
+merge sort and certain traversal algorithms.
 
 Expression: `f(n) = n log₂(n)`
 
@@ -157,6 +205,17 @@ def merge_sort(arr):
 </code>
 
 ### Quadratic Time Complexity - O(n²)
+
+Description: Quadratic Time Complexity means the
+algorithm execution time grows quadratically with the
+input size. As the input grows the time taken to
+complete increases significantly.
+
+Identifying: Look for nested loops where the number
+of iterations in the inner loop depends on the size of
+the input. Each iteration of the outer loop triggers multiple
+iterations of the inner loop. Common examples of this include
+nested iterations and bubble sort algorithms.
 
 Expression: `f(n) = n²`
 
