@@ -243,4 +243,22 @@ Spatial complexity is also expressed using Big O notation, specifically focusing
 
 In summary, computational complexity considers the time required for an algorithm to complete, while spatial complexity focuses on the resources, particularly memory or disk space, that an algorithm needs to run. Both aspects are important for understanding and analyzing the efficiency and scalability of algorithms.
 
+## Linear Spatial Complexity - 0(n)
+
+Linear Spatial Complexity would be an algorithm that for every item in the array it must create another array in the process of sorting it. This would mean that for an array of length 5 the algorithm will create an additional 5 arrays, for an array of 500 it would need to create an additional 500 arrays and so forth... this means that our spatial requirements for our algorithm grow linearly with the size of the input.
+
+## Logarithmic Spatial Complexity - O(log n)
+
+Logarithmic Spatial Complexity would be an algorithm which creates a diminishing number of additional arrays (carrying on with out previous example). This would be an algorithm that over the course of it's iterations the resources required to run would decrease per iteration.
+
+## Constant Spatial Complexity - O(1)
+
+Constant Spatial Complexity is exactly that, constant. This means that the algorithm always requires the same resources no matter the size of the input.
+
+## Quadratic Spatial Complexity - O(n²)
+
+Quadratic Spatial Complexity increases spatial consumption significantly with each iteration.
+Quadratic complexity can be a big red flag as it can result in excess memory consumption, long running
+code, or even memory leaks. Overall, this can lead to terrible user experiences as running out of memory can slow down devices, especially when we deal with lower memory devices such as Roku devices or other embedded systems. Typically arrays are the biggest drain on our resources, yes creating variables, functions, and other constructs which are stored in memory contribute, but remember when we are looking at Big O we are looking for the greatest contributor to the overall result.
+
 [Next >>]()
