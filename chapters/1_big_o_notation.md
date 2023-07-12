@@ -231,4 +231,16 @@ def bubble_sort(arr):
 </pre>
 </code>
 
+## Spatial Complexity
+
+In addition to computational complexity, there is another aspect called spatial complexity, which refers to the amount of resources, particularly memory (RAM) or disk space, that an algorithm requires to run or complete a task.
+
+Computational complexity focuses on analyzing the time it takes for an algorithm to execute as a function of the input size. It helps us understand how the runtime of an algorithm scales with the size of the input. This is typically measured using Big O notation, as we discussed earlier.
+
+On the other hand, spatial complexity deals with the amount of memory or disk space an algorithm needs to perform its operations. It helps us analyze the memory requirements of an algorithm as the input size increases. This aspect is essential because the available memory resources can limit the size of the problem an algorithm can handle efficiently.
+
+Spatial complexity is also expressed using Big O notation, specifically focusing on the amount of additional memory or space an algorithm requires relative to the input size. Common space complexities include `O(1)` for constant space usage, `O(n)` for linear space usage, and more complex space complexities such as `O(n²)` or `O(log n)`.
+
+In summary, computational complexity considers the time required for an algorithm to complete, while spatial complexity focuses on the resources, particularly memory or disk space, that an algorithm needs to run. Both aspects are important for understanding and analyzing the efficiency and scalability of algorithms.
+
 [Next >>]()
